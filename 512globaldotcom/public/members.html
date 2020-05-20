@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>MEMBER'S WORK SCHEDULER</title>
+    
+  </head>
+  <!--HERE YOU CAN SEE I STARTED A TABLE, THIS WILL BE MY FIRST TIME WORKING WITH A TABLE-->
+  <table>
+  <body>
+
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- HERE IS THE ID WHICH I WILL HOOK MY MOMENT JS TIMER ONTO-->
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+        <tr>
+            <th></th>
+            <td id="hour1" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form1" ></form><button class="editbtn" id="btn1" >save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS<span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour2" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form2"></form><button class="editbtn" id="btn2">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour3" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form3"></form><button class="editbtn" id="btn3">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour4" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form4"></form><button class="editbtn" id="btn4">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour5" rowspan="4" rowspan="2" class="row hour"><form><input type="text" id="form5"></form><button class="editbtn" id="btn5">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour6" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form6"></form><button class="editbtn" id="btn6">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour7" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form7"></form><button class="editbtn" id="btn7">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour8" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="for8"></form><button class="editbtn" id="btn8">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour9" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form9"></form><button class="editbtn" id="btn9">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour10" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form10"></form><button class="editbtn" id="btn10">save</button><span>9ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour11" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form11"></form><button class="editbtn" id="btn11">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour12" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form12"></form><button class="editbtn" id="btn12">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour13" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form13"></form><button class="editbtn" id="btn13">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour14" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form14"></form><button class="editbtn" id="btn14">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td id="hour15" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form15"></form><button class="editbtn" id="btn15">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr>
+            <th></th">
+            <td id="hour16" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form16"></form><button class="editbtn" id="btn16">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+        <tr> 
+            <th></th>
+            <td id="hour17" colspan="4" rowspan="2" class="row hour"><form><input type="text" id="form17"></form><button class="editbtn" id="btn17">save</button><span>ENTER WHATEVER YOU WANT TO ADD INTO THE DAILY PLANNER!!! LOCAL STORAGE WORKS</span></td>
+        </tr>
+       
+    </div>
+    </table>
+  
+    <!-- we need to find out code which will read our calendar's hours against the real world time, 
+    for this i think we will need a working clock in the header that we can refer to with each row-->
+  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script>
+        
+
+        
+      function date_time() {
+  now = moment().format('dddd Do MMMM YYYY HH:mm:ss');
+  document.getElementById('currentDay').innerHTML= now;
+  setTimeout(function () { date_time(); }, 1000);
+}
+date_time();
+
+
+
+
+
+function store1() {
+    document.getElementById('btn1').onclick = function() {
+        var input = document.getElementById('form1').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store1()
+
+
+
+function store2() {
+    document.getElementById('btn2').onclick = function() {
+        var input = document.getElementById('form2').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+
+store2()
+
+function store3() {
+    document.getElementById('btn3').onclick = function() {
+        var input = document.getElementById('form3').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store3()
+
+function store4() {
+    document.getElementById('btn4').onclick = function() {
+        var input = document.getElementById('form4').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store4()
+
+function store5() {
+    document.getElementById('btn5').onclick = function() {
+        var input = document.getElementById('form5').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store5()
+
+function store6() {
+    document.getElementById('btn6').onclick = function() {
+        var input = document.getElementById('form6').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store6()
+
+function store7() {
+    document.getElementById('btn7').onclick = function() {
+        var input = document.getElementById('form7').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store7()
+
+function store8() {
+    document.getElementById('btn8').onclick = function() {
+        var input = document.getElementById('form8').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store8()
+
+function store9() {
+    document.getElementById('btn9').onclick = function() {
+        var input = document.getElementById('form9').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store9()
+
+function store10() {
+    document.getElementById('btn10').onclick = function() {
+        var input = document.getElementById('form10').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store10()
+
+function store11() {
+    document.getElementById('btn11').onclick = function() {
+        var input = document.getElementById('form11').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store11()
+
+function store12() {
+    document.getElementById('btn12').onclick = function() {
+        var input = document.getElementById('form12').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store12()
+
+function store13() {
+    document.getElementById('btn13').onclick = function() {
+        var input = document.getElementById('form13').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store13()
+
+function store14() {
+    document.getElementById('btn14').onclick = function() {
+        var input = document.getElementById('form14').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store14()
+
+function store15() {
+    document.getElementById('btn15').onclick = function() {
+        var input = document.getElementById('form15').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store15()
+
+function store16() {
+    document.getElementById('btn16').onclick = function() {
+        var input = document.getElementById('form16').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store16()
+
+function store17() {
+    document.getElementById('btn17').onclick = function() {
+        var input = document.getElementById('form17').value;
+        
+        localStorage.getItem(input);
+localStorage.setItem("userinput", input);
+    };
+}
+store17()
+
+
+
+
+      function colorCodeHours1(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 9;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour1").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour1").classList.add("future");
+        } else {
+            document.getElementById("hour1").classList.add("past");
+        }
+        
+      }
+colorCodeHours1();
+
+function colorCodeHours2(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 9.5;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour2").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour2").classList.add("future");
+        } else {
+            document.getElementById("hour2").classList.add("past");
+        }
+        
+      }
+colorCodeHours2();
+
+function colorCodeHours3(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 10;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour3").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour3").classList.add("future");
+        } else {
+            document.getElementById("hour3").classList.add("past");
+        }
+        
+      }
+colorCodeHours3();
+
+function colorCodeHours4(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour =10.5;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour4").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour4").classList.add("future");
+        } else {
+            document.getElementById("hour4").classList.add("past");
+        }
+        
+      }
+colorCodeHours4();
+
+function colorCodeHours5(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 11;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour5").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour5").classList.add("future");
+        } else {
+            document.getElementById("hour5").classList.add("past");
+        }
+        
+      }
+colorCodeHours5();
+
+function colorCodeHours6(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 11.5;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour6").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour6").classList.add("future");
+        } else {
+            document.getElementById("hour6").classList.add("past");
+        }
+        
+      }
+colorCodeHours6();
+
+function colorCodeHours7(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 12;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour7").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour7").classList.add("future");
+        } else {
+            document.getElementById("hour7").classList.add("past");
+        }
+        
+      }
+colorCodeHours7();
+
+function colorCodeHours8(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 12.5;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour8").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour8").classList.add("future");
+        } else {
+            document.getElementById("hour8").classList.add("past");
+        }
+        
+      }
+colorCodeHours8();
+
+function colorCodeHours9(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 13;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour9").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour9").classList.add("future");
+        } else {
+            document.getElementById("hour9").classList.add("past");
+        }
+        
+      }
+colorCodeHours9();
+
+function colorCodeHours10(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 13.5;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour10").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour10").classList.add("future");
+        } else {
+            document.getElementById("hour10").classList.add("past");
+        }
+        
+      }
+colorCodeHours10();
+
+function colorCodeHours11(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 14;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour11").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour11").classList.add("future");
+        } else {
+            document.getElementById("hour11").classList.add("past");
+        }
+        
+      }
+colorCodeHours11();
+
+function colorCodeHours12(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 14.5;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour12").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour12").classList.add("future");
+        } else {
+            document.getElementById("hour12").classList.add("past");
+        }
+        
+      }
+colorCodeHours12();
+
+function colorCodeHours13(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 15;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour13").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour13").classList.add("future");
+        } else {
+            document.getElementById("hour13").classList.add("past");
+        }
+        
+      }
+colorCodeHours13();
+
+function colorCodeHours14(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 15.5;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour14").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour14").classList.add("future");
+        } else {
+            document.getElementById("hour14").classList.add("past");
+        }
+        
+      }
+colorCodeHours14();
+
+function colorCodeHours15(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 16;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour15").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour15").classList.add("future");
+        } else {
+            document.getElementById("hour15").classList.add("past");
+        }
+        
+      }
+colorCodeHours15();
+
+function colorCodeHours16(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 16.5;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour16").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour16").classList.add("future");
+        } else {
+            document.getElementById("hour16").classList.add("past");
+        }
+        
+      }
+colorCodeHours16();
+
+function colorCodeHours17(){
+        // // I want something that will attach my clock to those times, and then turn the past ones white-
+//-the current ones red, and the future ones green. the schedule has an id of timeTable
+        
+        var checkHour = moment().format("H");
+        var dailyHour = 17;
+        parsedCheckHour = parseInt(checkHour);
+        console.log(parsedCheckHour);
+        console.log(dailyHour);
+
+        if((dailyHour < parsedCheckHour)){
+            document.getElementById("hour17").classList.add("present");
+            
+        } else if ((dailyHour => checkHour)) {
+            document.getElementById("hour17").classList.add("future");
+        } else {
+            document.getElementById("hour17").classList.add("past");
+        }
+        
+      }
+colorCodeHours17();
+
+
+
+
+      </script>
+  </body>
+</html>
